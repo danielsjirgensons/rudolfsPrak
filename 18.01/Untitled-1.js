@@ -127,6 +127,8 @@ withLongTerm(", jusu vertejums ir 3")
 // Validating prompt input
 function validateInput(input){
     var text = "";
+
+    // TODO: output to document
     if(input > 3){
         alert("eksamens ir nokartots. Jusu vertejums ir" + writeResult(input));
        
@@ -134,7 +136,7 @@ function validateInput(input){
     }else if(input < 4){
         alert("eksamens nav nokartots. Jusu vertejums ir  "+ writeResult(input));
     }
-    
+    // TODO: if < 10
     else if(isNaN(input)){
         alert("Ievadiet skaitli!");
         callWindow();
@@ -147,6 +149,7 @@ function validateInput(input){
 function writeResult(number){
     var text = "";
 
+    // TODO: balles vārdiskā vērtība
     switch(number){
         case 1:
             text = "Viens";
